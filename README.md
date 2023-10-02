@@ -3,12 +3,17 @@
 Aim
 The aim of this project is to build a model that predicts movie ratings based on given features.
 
+
+
+
 Datasets
 The following datasets were used for this project:
-
 Movie_data: Contains movie information after preprocessing, including MovieName, Genre, and MovieIDs.
 Ratings_data: Contains ratings information after preprocessing, including Ratings and Timestamp.
 Users_data: Contains user information after preprocessing, including Gender, Age, Occupation, and Zip-code.
+
+
+
 
 
 Libraries Used
@@ -21,6 +26,9 @@ sklearn.preprocessing.LabelEncoder
 sklearn.preprocessing.MinMaxScaler
 sklearn.model_selection.train_test_split
 sklearn.linear_model.LogisticRegression
+
+
+
 
 
 
@@ -44,6 +52,8 @@ Data visualization was performed using count plots and histograms to gain insigh
 
 
 
+
+
 Model Training
 
 The feature matrix input and target vector target were created using relevant columns from the final dataset df_final.
@@ -51,6 +61,9 @@ The feature matrix input and target vector target were created using relevant co
 The data was split into training and testing sets using train_test_split.
 
 The input data was scaled using MinMaxScaler to normalize the values between 0 and 1.
+
+
+
 
 
 
