@@ -1,12 +1,12 @@
 # CodSoft_Task1
 
-##Aim
+## Aim
 The aim of this project is to build a model that predicts movie ratings based on given features.
 
 
 
 
-##Datasets
+## Datasets
 The following datasets were used for this project:<br>
 Movie_data: Contains movie information after preprocessing, including MovieName, Genre, and MovieIDs.<br>
 Ratings_data: Contains ratings information after preprocessing, including Ratings and Timestamp.<br>
@@ -16,7 +16,7 @@ Users_data: Contains user information after preprocessing, including Gender, Age
 
 
 
-Libraries Used<br>
+## Libraries Used<br>
 The following important libraries were used for this project:<br>
 numpy<br>
 pandas<br>
@@ -32,7 +32,7 @@ sklearn.linear_model.LogisticRegression<br>
 
 
 
-##Data Exploration and Preprocessing
+## Data Exploration and Preprocessing
 The Movie_data, Ratings_data, and Users_data were loaded as DataFrames from separate CSV files.<br>
 The missing values in each DataFrame were dropped using dropna(inplace=True).<br>
 The shape and descriptive statistics for each DataFrame were displayed using df.shape and df.describe().<br>
@@ -46,7 +46,7 @@ Data visualization was performed using count plots and histograms to gain insigh
 
 
 
-##Model Training
+## Model Training
 The feature matrix input and target vector target were created using relevant columns from the final dataset df_final.<br>
 The data was split into training and testing sets using train_test_split.<br>
 The input data was scaled using MinMaxScaler to normalize the values between 0 and 1.<br>
@@ -56,8 +56,6 @@ The input data was scaled using MinMaxScaler to normalize the values between 0 a
 
 
 
-Model Prediction
-
-A logistic regression model was initialized and trained on the training data using LogisticRegression.
-
-The model was used to predict movie ratings for the test set using model.predict(X_test).
+## Model Prediction<br>
+A logistic regression model was initialized and trained on the training data using LogisticRegression.<br>
+The model was used to predict movie ratings for the test set using model.predict(X_test).<br>
